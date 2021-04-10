@@ -23,6 +23,7 @@ class CampsiteInfo extends Component {
                     <h4>Comments</h4>
                     {comments.map(comment => <div key={comment.id}>
                         <p>
+                            {/*It should be noted that the paragraph element is what caused the comments to be nicely spaced*/}
                             {comment.text}<br/>
                             -- {comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}
                         </p>
