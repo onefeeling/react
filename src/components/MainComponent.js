@@ -55,6 +55,7 @@ class Main extends Component {
         };
 
         const CampsiteWithId = ({match}) => {
+            console.log(this.props.comments.comments, this.props.comments)
             return (
                 <CampsiteInfo 
                     campsite={this.props.campsites.campsites.filter(campsite => campsite.id === +match.params.campsiteId)[0]}
